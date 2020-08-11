@@ -18,8 +18,8 @@ class App extends Component {
       resumeData: {}
     };
 
-    ReactGA.initialize('UA-110570651-1');
-    ReactGA.pageview(window.location.pathname);
+    //ReactGA.initialize('UA-110570651-1');
+    //ReactGA.pageview(window.location.pathname);
 
   }
 
@@ -30,6 +30,7 @@ class App extends Component {
       cache: false,
       success: function(data){
         this.setState({resumeData: data});
+        console.log(data)
       }.bind(this),
       error: function(xhr, status, err){
         console.log(err);

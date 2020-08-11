@@ -44,6 +44,7 @@
    #nav-wrap {
       font: 11px 'opensans-bold', sans-serif;
       letter-spacing: 1.5px;
+      background-color: black;
    }
 
 
@@ -55,7 +56,6 @@
       margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
-   #about .download { width: 50%; }
 
    /* Resume Section
    ------------------------------------------------------------------- */
@@ -215,7 +215,7 @@
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   #about .profile-pic { display: block; margin-bottom: 1rem}
    #about .download .button {
       width: 100%;
       text-align: center;

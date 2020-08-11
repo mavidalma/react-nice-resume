@@ -1,118 +1,104 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import mailing from '../helpers/mailing';
+import PopUp from './PopUp';
 
-class Contact extends Component {
-  render() {
+function Contact () {
 
-    if(this.props.data){
-      var name = this.props.data.name;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone= this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
-    }
+  const [data, setData] = useState({name:"{aquí iría tu nombre. Bueno, ya nos iremos conociendo}", subject:"contacto desde la web", email:"", message:""})
+  const [loading, setLoading] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+
+  const style = {
+     visible: {    
+        "position": "relative",
+        "left": "18px",
+        "top": "17px"},
+     hidden: { "display": "none"},
+     messageOpen: {
+      background: "#0F0F0F",
+      padding: "24px 24px",
+      "margin-bottom": "36px",
+      width: "65%",
+      "margin-left": "26%",
+     }
+  };
+
+  const handleChange = (e)=> {
+   e.preventDefault();
+   const value = e.target.value;
+   const name = e.target.name;
+   setData({ ...data, [name]: value });
+  }
+
+  const handleSubmit = async (e)=> {
+     e.preventDefault();
+     setLoading(true);
+
+     !data.subject ? setData({...data, subject:"contacto desde la web"}) : null;
+
+     const sendUser = await mailing.sendToUser(data);
+     const sendMe = await mailing.sendToMe(data);
+      sendUser ? console.log("senuser is true") : console.log("senduser is false");
+      sendMe ? console.log("sendMe is true") : console.log("sendMe is false");
+
+      sendUser && sendMe ? setSent(true): null;
+
+      setData({name:"", subject:"", email:"", message:""})
+      setLoading(false);
+  }
 
     return (
       <section id="contact">
 
          <div className="row section-head">
-
             <div className="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
+               <h1><span>Déjame un mensaje</span></h1>
             </div>
-
             <div className="ten columns">
-
-                  <p className="lead">{message}</p>
-
+                  <p className="lead">Es gratis. No te va a llevar más de 10" dejarme un mensaje y eh, quién sabe, igual es el comienzo de algo interesante y exitoso.</p>
+                  <p className="lead">Y en el peor de los casos, no pasa nada. Como mucho habrás perdido 10 segundos.</p>
+                  <h4 style={{"text-align": "center"}}>Venga, pon tu mail, tu nombre, y dale.</h4>
             </div>
-
          </div>
 
          <div className="row">
-            <div className="eight columns">
-
-               <form action="" method="post" id="contactForm" name="contactForm">
+            <div className="twelve columns">
+               <form  id="contactForm" onSubmit={handleSubmit}>
 					<fieldset>
-
                   <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <label htmlFor="contactName">Nombre </label>
+						   <input type="text" size="35" id="contactName" name="name" onChange={handleChange}/>
                   </div>
-
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+						   <input type="text" size="35" id="contactEmail" name="email" value={data.email} onChange={handleChange} required/>
                   </div>
-
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+						   <input type="text" size="35" id="contactSubject" name="subject" onChange={handleChange}/>
                   </div>
-
                   <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <label htmlFor="contactMessage">Mensaje <span className="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="message" value={data.message} onChange={handleChange} required> </textarea>
                   </div>
-
                   <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
+                     <button className="submit" type="submit">Enviar</button>
+                     <span id="image-loader" style={loading ? style.visible : style.hidden}>
                         <img alt="" src="images/loader.gif" />
                      </span>
                   </div>
 					</fieldset>
 				   </form>
 
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
+           <div id="message-warning" style={error ? style.messageOpen : style.hidden} onClick={()=> setError(false)}> UPS! Parece que ha habido un error, por favor inténtalo más tarde o escríbeme por linkedIn :)</div>
+				   <div id="message-success" style={sent ? style.messageOpen : style.hidden} onClick={()=> setSent(false)}>
+                  <i className="fa fa-check" ></i>Bravo! Mensaje enviado<br />
 				   </div>
            </div>
-
-
-            <aside className="four columns footer-widgets">
-               <div className="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p className="address">
-						   {name}<br />
-						   {street} <br />
-						   {city}, {state} {zip}<br />
-						   <span>{phone}</span>
-					   </p>
-				   </div>
-
-               <div className="widget widget_tweets">
-                  <h4 className="widget-title">Latest Tweets</h4>
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-		         </div>
-            </aside>
       </div>
    </section>
     );
-  }
 }
 
 export default Contact;

@@ -176,6 +176,8 @@ p img { margin: 0; }
 p.lead {
    font: 19px/36px 'opensans-light', sans-serif;
    margin-bottom: 18px;
+   color: rgb(243, 114, 9);
+   justify-content: center;
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
@@ -425,10 +427,10 @@ dd { margin: 0 0 0 20px; }
 	-ms-transition: all 200ms ease-in-out;
 	transition: all 200ms ease-in-out;
 
-   -moz-border-radius: 0px;
-   -webkit-border-radius: 0px;
-   -khtml-border-radius: 0px;
-	border-radius: 0px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -khtml-border-radius: 5px;
+	border-radius: 5px;
 }
 .pagination .page-numbers:hover {
    background: #838A91;
@@ -447,6 +449,12 @@ dd { margin: 0 0 0 20px; }
 .pagination .prev, .pagination .next {}
 
 /*  5. Images  --------------------------------------------------------- */
+
+.image-container { 
+   display: flex;
+   justify-content: center;
+   margin-bottom: 15px;
+}
 
 img {
    max-width: 100%;
@@ -481,10 +489,10 @@ input[type="button"] {
 	-ms-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 
-   -moz-border-radius: 0px;
-   -webkit-border-radius: 0px;
-   -khtml-border-radius: 0px;
-   border-radius: 0px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -khtml-border-radius: 5px;
+   border-radius: 5px;
 }
 
 .button:hover,
@@ -623,6 +631,12 @@ input[type="checkbox"] { display: inline; }
 .column.centered, .columns.centered  {
     float: none;
     margin: 0 auto;
+}
+
+.download {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
 }
 
 /* removed gutters */

@@ -1,14 +1,13 @@
 {
   "main": {
-    "name":"Nordic-Giant Project",
-    "description":"I am a web development engineer and I use react and python to develop pages. This project is a resume template that can be used as the project home page or resume page",
+    "name":"Mavidalma",
+    "description":"Emprendedor digital, intraemprendedor analógico y (de repente) desarrollador web. Si quieres testar esa idea de negocio que lleva tiempo rondándote la cabeza, o buscas a alguien que lidere un proyecto dentro de tu empresa, adelante. Ponte cómodo. Enjoy the ride",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "youremailhere@gmail.com",
     "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "github":"https://github.com/mavidalma",
+    "linkedin":"https://www.linkedin.com/in/mariovidalm/",
     "address":{
       "street":"(Your Street)",
       "city":"(Your City)",
@@ -16,37 +15,24 @@
       "zip": "(Your Zip/Postal Code)"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "jsResumeDownload":"https://drive.google.com/file/d/1AR81eF6L_gzI5Ljq-yu0QdSJHPJd4qOV/view?usp=sharing",
+    "boringResumeDownload":"https://drive.google.com/file/d/1uacQvP2_ORntPz0FBbVgv6_8iItTPGzb/view?usp=sharing",
+    "styledResumeDownload":"https://drive.google.com/file/d/1EOjLwRAdwGOoVHqci_fObiZp3mtRmKmq/view?usp=sharing",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/mariovidalm/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/mavidalma",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Competencias, habilidades y fortalezas",
     "education":[
       {
         "school":"University?",
@@ -63,15 +49,17 @@
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Minevera",
+        "title":"Fundador y CEO",
+        "website": "www.minevera.es",
+        "years":"2013 - 2019",
+        "description":"Desde barrer la cocina a tener reuniones con inversores. Todo lo que hay entremedias te lo podrás imaginar. Resumiendo: marketing digital y desarrollo del ecommerce (Woocommerce primero y PRestashop después), gestión de equipos y control de operaciones"
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
+        "company":"VWFS",
+        "title":"Skoda Credit Brand Manager",
+        "site": "www.vwfs.es",
+        "years":"2011 - 2013",
         "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       }
     ],
