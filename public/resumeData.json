@@ -97,10 +97,11 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"voyaqi",
+        "category":"Carsharing para los trayectos habituales diarios. Desarrollé el MVP y está 'launch pending'",
+        "image":"voyaqi_screenshot.jpeg", 
+        "tech": "Nodejs, express, mongoDB, Reactjs, AWS, cote, shocket.io, [+]",
+        "url":"https://www.voyaqi.app"
       },
       {
         "title":"Fury Fighting Gear",

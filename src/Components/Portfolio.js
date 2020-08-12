@@ -1,33 +1,17 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import Project from './Project';
 
-class Portfolio extends Component {
-  render() {
+function Portfolio ({data, ...props}) {
+  const [project, setProject] = useState([]);
 
-    if (this.props.data) {
-      var projects = this.props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
-        
-        return (
-          <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap">
-              <a href={projects.url} title={projects.title}>
-                <img alt={projects.title} src={projectImage} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                    <p>{projects.category}</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        )
-      })
-    }
+  useEffect(()=> {
+    data ? setProject(data.projects) : null
+  },[data])
 
     return (
+      
       <section id="portfolio">
-
+        {console.log(project)}
         <div className="row">
 
           <div className="twelve columns collapsed">
@@ -35,13 +19,15 @@ class Portfolio extends Component {
             <h1>Ok, ok... Pero ¿has desarrollado algo? ¿Cómo vas de código?</h1>
 
             <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {projects}
+              {project ? 
+                project.map((el, i) => <Project project={el} key={i}/> ) 
+                : null
+              }
             </div>
           </div>
         </div>
       </section>
     );
   }
-}
 
 export default Portfolio;
