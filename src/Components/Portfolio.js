@@ -11,14 +11,15 @@ function Portfolio ({data, ...props}) {
     return (
       
       <section id="portfolio">
-        {console.log(project)}
         <div className="row">
 
           <div className="twelve columns collapsed">
 
             <h1>Ok, ok... Pero ¿has desarrollado algo? ¿Cómo vas de código?</h1>
+            <h2>Bueno, además de la sencilla web que estás viendo ahora mismo, tienes estos ejemplos:</h2>
+            <br/>
 
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" className="bgrid-thirds s-bgrid-thirds cf">
               {project ? 
                 project.map((el, i) => <Project project={el} key={i}/> ) 
                 : null

@@ -32,65 +32,76 @@
     ]
   },
   "resume":{
-    "skillmessage":"Competencias, habilidades y fortalezas",
+    "skillmessage":"Qué se hacer y en qué te puedo ayudar.",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"KeepCoding",
+        "degree":"full-stack web bootcamp",
+        "graduated":"Junio 2020",
+        "url": "https://www.keepcoding.io",
+        "description":"Aprendiendo todas las tecnologías necesarias para desarrollar un MVP de manera exitosa"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"EADA",
+        "degree":"MBA",
+        "graduated":"Junio 2011",
+        "url": "https://www.eada.com",
+        "description":"MBA en un de las principales escuelas de negocio de España"
+      },
+      {
+        "school":"UPSA",
+        "degree":"Publicidad y RRPP",
+        "graduated":"Junio 2010",
+        "url": "https://www.upsa.es",
+        "description":"Licenciado en Publicidad, especialidad en planificación de medios y RRPP"
       }
     ],
     "work":[
       {
         "company":"Minevera",
         "title":"Fundador y CEO",
-        "website": "www.minevera.es",
+        "url": "https://www.minevera.es",
         "years":"2013 - 2019",
-        "description":"Desde barrer la cocina a tener reuniones con inversores. Todo lo que hay entremedias te lo podrás imaginar. Resumiendo: marketing digital y desarrollo del ecommerce (Woocommerce primero y PRestashop después), gestión de equipos y control de operaciones"
+        "description":"Desde barrer la cocina a tener reuniones con inversores. Todo lo que hay entremedias te lo podrás imaginar. Resumiendo: marketing digital y desarrollo del ecommerce (Woocommerce primero y Prestashop después), gestión de equipos y control de operaciones"
+      },
+      {
+        "company":"Tahona Moderna",
+        "title":"Desarrollo de negocio",
+        "url": "http://www.tahonamoderna.es",
+        "years":"2013 - 2019",
+        "description":"Desarrollo de nuevos negocios tanto analógicos como digitales. MVP y product-market fit"
       },
       {
         "company":"VWFS",
         "title":"Skoda Credit Brand Manager",
-        "site": "www.vwfs.es",
+        "url": "https://www.vwfs.es",
         "years":"2011 - 2013",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Brand & Product management y reporting. Responsable de la performance de los productos de la marca"
+      },
+      {
+        "company":"Sony Pictures",
+        "title":"Trade Marketing",
+        "url": "https://www.sonypictures.es",
+        "years":"2010",
+        "description":"Local Store Marketing. Responsable de la acciones promocionales y de publicidad en los exhibidores"
       }
     ],
     "skills":[
       {
-        "name":"Python",
+        "name":"desarrollo de MVPs y product MGMT",
+        "level":"65%"
+      },
+      {
+        "name":"venture building y estrategia competitiva",
+        "level":"80%"
+      },
+      {
+        "name":"Growth y Marketing digital",
+        "level":"70%"
+      },
+      {
+        "name":"desarrollo web y programación",
         "level":"60%"
-      },
-      {
-        "name":"VueJs",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
       }
     ]
   },
@@ -99,33 +110,23 @@
       {
         "title":"voyaqi",
         "category":"Carsharing para los trayectos habituales diarios. Desarrollé el MVP y está 'launch pending'",
-        "image":"voyaqi_screenshot.jpeg", 
+        "image":"voyaqi.jpeg", 
         "tech": "Nodejs, express, mongoDB, Reactjs, AWS, cote, shocket.io, [+]",
         "url":"https://www.voyaqi.app"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Minevera",
+        "category":"e-commerce de alimentación que lancé y gestioné hasta 2019.",
+        "tech": "woocommerce, Prestashop, Google MK suite, Heap, etc.",
+        "image":"minevera.jpeg",
+        "url":"http://www.minevera.es"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title":"Bootcamp",
+        "category":"Pequeña web de resumen de todas las prácticas del Bootcamp.",
+        "tech" : "AWS, Nginx, vanillaJs, bootstrap",
+        "image":"bootcamp.jpeg",
+        "url":"http://www.bootcamp.mavidalma.es"
       }
     ]
   }

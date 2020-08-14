@@ -39,8 +39,6 @@ function Contact () {
 
      const sendUser = await mailing.sendToUser(data);
      const sendMe = await mailing.sendToMe(data);
-      sendUser ? console.log("senuser is true") : console.log("senduser is false");
-      sendMe ? console.log("sendMe is true") : console.log("sendMe is false");
 
       sendUser && sendMe ? setSent(true): null;
 
@@ -56,9 +54,9 @@ function Contact () {
                <h1><span>Déjame un mensaje</span></h1>
             </div>
             <div className="ten columns">
-                  <p className="lead">Es gratis. No te va a llevar más de 10" dejarme un mensaje y eh, quién sabe, igual es el comienzo de algo interesante y exitoso.</p>
+                  <p className="lead">No te va a llevar más de 10" y eh, quién sabe, igual es el comienzo de algo interesante y exitoso.</p>
                   <p className="lead">Y en el peor de los casos, no pasa nada. Como mucho habrás perdido 10 segundos.</p>
-                  <h4 style={{"text-align": "center"}}>Venga, pon tu mail, tu nombre, y dale.</h4>
+                  <h4 style={{"text-align": "center"}}>Venga, pon tu mail, tu nombre, y dale. <strong>Es gratis</strong></h4>
             </div>
          </div>
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ParticlesBg  from "particles-bg";
+import {isMobile} from 'react-device-detect';
 
 class Header extends Component {
   render() {
@@ -15,35 +16,15 @@ class Header extends Component {
       })
     }
 
-    let config = {
-      num: [5,10],
-      rps: 0.5,
-      radius: [1, 20],
-      life: [1.5, 1.6],
-      v: [1, 0],
-      tha: [0, 40],
-      // body: "./img/icon.png", // Whether to render pictures
-       rotate: [0, 20],
-      //alpha: [0.6, 0.6],
-      scale: [7, 15],
-      position: "center", // all or center or {x:1,y:1,width:100,height:100}
-      color: ["random", "#ff0000"],
-      cross: "dead", // cross or bround
-      random: null,  // or null,
-      g: 1,    // gravity
-      f: [-1, 1], // force
-      onParticleUpdate: (ctx, particle) => {
-          ctx.beginPath();
-          ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
-          ctx.fillStyle = particle.color;
-          ctx.fill();
-          ctx.closePath();
-      }
-    };
 
     return (
       <header id="home">
-      <ParticlesBg type="cobweb" num={182} color={["#fe6928", "#ffffff"]} bg={true} />
+         {isMobile ?
+         <ParticlesBg type="cobweb" num={77} color={["#fe6928", "#ffffff"]} bg={true} />
+         :
+         <ParticlesBg type="cobweb" num={182} color={["#fe6928", "#ffffff"]} bg={true} />
+      }
+      
       <nav id="nav-wrap">
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
