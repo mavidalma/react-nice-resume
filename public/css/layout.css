@@ -189,7 +189,7 @@ ul#nav li.current a { color: #fe6928; }
 }
 
 #about a, #about a:visited  { color: #fff; }
-#about a:hover, #about a:focus { color: #0762f9; }
+#about a:hover, #about a:focus { color: rgb(243, 114, 9); }
 
 #about h2 {
    font: 3rem 'opensans-bold', sans-serif;
@@ -247,7 +247,7 @@ ul#nav li.current a { color: #fe6928; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #0762f9;
+   border-bottom: 3px solid #fe6928;
    padding-bottom: 6px;
 }
 #resume h3 {

@@ -39,7 +39,7 @@ function Contact () {
 
      const sendUser = await mailing.sendToUser(data);
      const sendMe = await mailing.sendToMe(data);
-
+      console.log(sendUser, sendMe);
       sendUser && sendMe ? setSent(true): null;
 
       setData({name:"", subject:"", email:"", message:""})

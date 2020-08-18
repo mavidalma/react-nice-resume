@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import event from '../helpers/eventController';
 
 class About extends Component {
    render() {
@@ -26,9 +27,9 @@ class About extends Component {
                      <img className="profile-pic" src={profilepic} alt="Mavidalma picture. Unbelievably handsome, as usual." />
                   </div>
                   <div className="columns download">
-                     <a href={boringResumeDownload} className="button" target="_blank"><i className="fa fa-download"></i>CV largo y completo</a>
-                     <a href={styledResumeDownload} className="button" target="_blank"><i className="fa fa-download"></i>CV estilizado en una página</a>
-                     <a href={jsResumeDownload} className="button" target="_blank"><i className="fa fa-download"></i>CV friki en javaScript</a>
+                     <a href={boringResumeDownload} className="button" target="_blank" onClick={()=> event.longCVDownload()}><i className="fa fa-download"></i>CV largo y completo</a>
+                     <a href={styledResumeDownload} className="button" target="_blank" onClick={()=> event.shortCVDownload()}><i className="fa fa-download"></i>CV estilizado en una página</a>
+                     <a href={jsResumeDownload} className="button" target="_blank" onClick={()=> event.jsCVDownload()}><i className="fa fa-download"></i>CV friki en javaScript</a>
                   </div>
                </div>
                <div className="seven columns main-col">
