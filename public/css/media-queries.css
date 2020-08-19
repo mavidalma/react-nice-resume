@@ -62,6 +62,24 @@
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #resume .main-col { padding-right: 5%; }   
 
+   /* portfolio on mobile (touch so no overlay) */
+   .portfolio-item .item-wrap .overlay {
+      width: 70%;
+      height: 70%;
+      opacity: 0.9;
+      top: 15%;
+      left: 15%;
+      overflow: hidden;
+   }
+
+   .item-wrap .overlay h5 {
+      color: white;
+   }
+
+   .overlay .tech { 
+      visibility: hidden;
+   }
+
    /* Testimonials Section
    ------------------------------------------------------------------- */
    #testimonials .header-col h1:before {
