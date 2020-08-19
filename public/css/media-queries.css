@@ -237,6 +237,13 @@
       
    .bars { width: 100%; }
 
+   .skills li:nth-child(1) { 
+      margin-bottom: 80px;
+   }
+
+   .skills li:nth-child(2) em { 
+      top: -56px !important;  
+   } 
 
    /* Call To Action Section
    /* ----------------------------------------------------------------- */
@@ -363,6 +370,12 @@
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
 
+   /* Skills bar compressed */
+
+   .skills li:nth-child(1) em { 
+      top: -56px !important;  
+   } 
+
    /* footer
    ------------------------------------------------------------------------ */
 
@@ -370,6 +383,19 @@
    footer .social-links { font-size: 20px; }
    footer .social-links li { margin-left: 14px; }   
 
+}
+
+/* small smartphones */
+
+@media only screen and (max-width: 400px) {
+
+   .skills li:nth-child(3) { 
+      margin-bottom: 80px;
+   }
+   
+   .skills li:nth-child(4) em { 
+      top: -56px !important;  
+   } 
 }
 
 

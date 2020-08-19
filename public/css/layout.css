@@ -92,6 +92,19 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #0762f9; }
 
+@media (max-width: 399px) {
+   header .social { 
+      display: flex;
+      flex-direction: column;
+   }
+
+   .social .btn:first-child {
+      display: inline-block;
+      margin-right: 0px !important;
+  }
+}
+
+
 /* scrolldown link */
 header .scrolldown a {
    position: absolute;
