@@ -376,6 +376,16 @@
       top: -56px !important;  
    } 
 
+   /* portfolio */
+
+   #portfolio h2 {
+      margin: auto 5px;
+   }
+
+   #portfolio h1 {
+      margin-left: 5px;
+      margin-right: 5px;
+   }
    /* footer
    ------------------------------------------------------------------------ */
 
