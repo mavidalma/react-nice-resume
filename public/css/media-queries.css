@@ -76,10 +76,6 @@
       color: white;
    }
 
-   .overlay .tech { 
-      visibility: hidden;
-   }
-
    /* Testimonials Section
    ------------------------------------------------------------------- */
    #testimonials .header-col h1:before {
@@ -404,6 +400,10 @@
       margin-left: 5px;
       margin-right: 5px;
    }
+
+   .overlay .tech { 
+      visibility: hidden;
+   }
    /* footer
    ------------------------------------------------------------------------ */
 
@@ -424,6 +424,7 @@
    .skills li:nth-child(4) em { 
       top: -56px !important;  
    } 
+
 }
 
 
