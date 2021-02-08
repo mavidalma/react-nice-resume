@@ -1,7 +1,7 @@
 {
   "main": {
     "name":"Mavidalma",
-    "description":"Emprendedor digital, intraemprendedor analógico y (de repente) desarrollador web. Si quieres testar esa idea de negocio que lleva tiempo rondándote la cabeza, o buscas a alguien que lidere un proyecto dentro de tu empresa, adelante. Ponte cómodo. Enjoy the ride",
+    "description":"Emprendedor digital, intraemprendedor analógico y software engineer aspiracional. Más de 7 años de experiencia desarrollando negocios y productos digitales. ¿Quieres saber algo más de mi? Ponte cómodo y SCROLL DOWN",
     "image":"profilepic.jpg",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "youremailhere@gmail.com",
@@ -35,11 +35,11 @@
     "skillmessage":"Qué se hacer y en qué te puedo ayudar.",
     "education":[
       {
-        "school":"KeepCoding",
-        "degree":"full-stack web bootcamp",
-        "graduated":"Junio 2020",
-        "url": "https://www.keepcoding.io",
-        "description":"Aprendiendo todas las tecnologías necesarias para desarrollar un MVP de manera exitosa"
+        "school":"UPSA",
+        "degree":"Publicidad y RRPP",
+        "graduated":"Junio 2010",
+        "url": "https://www.upsa.es",
+        "description":"Licenciado en Publicidad, especialidad en planificación de medios y RRPP"
       },
       {
         "school":"EADA",
@@ -49,11 +49,18 @@
         "description":"MBA en un de las principales escuelas de negocio de España"
       },
       {
-        "school":"UPSA",
-        "degree":"Publicidad y RRPP",
-        "graduated":"Junio 2010",
-        "url": "https://www.upsa.es",
-        "description":"Licenciado en Publicidad, especialidad en planificación de medios y RRPP"
+        "school":"KeepCoding",
+        "degree":"full-stack web bootcamp",
+        "graduated":"Junio 2020",
+        "url": "https://www.keepcoding.io",
+        "description":"Aprendiendo todas las tecnologías necesarias para desarrollar un MVP de manera exitosa"
+      },
+      {
+        "school":"UVA-Darden Business School",
+        "degree":"Digital Product Management specialization",
+        "graduated":"Diciembre 2021",
+        "url": "https://www.coursera.org/learn/uva-darden-agile-team-management",
+        "description":"Especialización en gestión de productos digitales - metodologías ágiles"
       }
     ],
     "work":[
@@ -88,16 +95,16 @@
     ],
     "skills":[
       {
-        "name":"desarrollo de MVPs y product MGMT",
-        "level":"65%"
+        "name":"Product marketing management",
+        "level":"85%"
       },
       {
         "name":"venture building y estrategia competitiva",
-        "level":"80%"
+        "level":"70%"
       },
       {
-        "name":"Growth y Marketing digital",
-        "level":"70%"
+        "name":"e-commerce & digital business",
+        "level":"80%"
       },
       {
         "name":"desarrollo web y programación",

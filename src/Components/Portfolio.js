@@ -15,7 +15,7 @@ function Portfolio ({data, ...props}) {
 
           <div className="twelve columns collapsed">
 
-            <h1>Ok, ok... Pero ¿has desarrollado algo? ¿Cómo vas de código?</h1>
+            <h1>Ok, ok... Enséñame cosas que hayas lanzado. ¿Cómo vas de código?</h1>
             <h2>Bueno, además de la sencilla web que estás viendo ahora mismo, tienes estos ejemplos:</h2>
             <br/>
 
